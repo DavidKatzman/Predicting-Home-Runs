@@ -2,9 +2,8 @@
 
 ## Project Goals
 
-    - The goal of this project is to use linear regression models to predict total home runs for 2020. 
-    In order to account for possible player injuries that may limit their plate appearances, 
-    we engineered our dependent variable, Home Runs per Plate Appearance. 
+    - The goal of this project is to use linear regression models to predict total home runs for 2020
+    - In order to account for possible player injuries that may limit their plate appearances, we engineered our dependent variable, Home Runs per Plate Appearance. 
 
 
 ## Data Sources
@@ -15,9 +14,9 @@
 
 ## Data Summary
 
-    - Using datasources mentioned above, we collected player statistics from the 2015 season through 2018. 
-    Then we concatenated all four datasets into one master training set that we would use to train our regression model. 
-    After cleaning the data, we had a total of 854 observations and 54 possible independent variables. 
+    - Using datasources mentioned above, we collected player statistics from the 2015 season through 2018
+    - We then concatenated all four datasets into one master training set that we would use to train our regression model 
+    - After cleaning the data, we had a total of 854 observations and 54 possible independent variables. 
 
 
 ## Tools
@@ -40,17 +39,19 @@
         - Trial and Error
         
 ## Final Model
-    - Our best fitted model ended up being a basic linear regression with a lambda value of zero. 
-    The primary metric that was used to determine the model with the best fit is RMSE (Root Mean Squared Error), which had a value of .6723 . 
+    - Our best fitted model ended up being a basic linear regression with a lambda value of zero
+    - The primary metric that was used to determine the model with the best fit is RMSE (Root Mean Squared Error), which had a value of .6723 
 
 
 ## Results
-    - After merging our final predictions with our 2019 dataset, we conducted a spot check of random players to compare our predicted Home Run values with predictions conducted on FanGraphs.com. We noticed that the better the player, the further our predictions were off by. These findings coincide with our residual error plot which shows a funnel-shape distribution; as Home Runs increase, so does our variance in residuals. 
+    - After merging our final predictions with our 2019 dataset, we conducted a spot check of random players to compare our predicted Home Run values with predictions conducted on FanGraphs.com
+    - We noticed that the better the player, the further our predictions differed from theirs
+    - These findings coincide with our residual error plot which shows a funnel-shape distribution; as Home Runs increase, so does our variance in residuals. 
     
     
     
 ## Ways to Improve Our Model
-    - more player observations
-    - Need to take into account difference in ballpark size and the Juice Ball of 2019
-    - Because we only used data from 2019 to predict results for 2020, a player having a 'bad' year by chance could skew our results.
+    - We could include more player observations
+    - We could take into account differences in ballpark size as well as the juiced ball of 2019
+    - Because we only used data from 2019 to predict results for 2020, a player having a 'bad' year by chance could skew our results
     
