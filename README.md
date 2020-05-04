@@ -1,4 +1,4 @@
-# baseball_HR_linear_regression
+# Predicting Home Runs
 
 ## Project Goals
 
